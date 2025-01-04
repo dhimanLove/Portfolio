@@ -71,6 +71,7 @@ nav
 {
     font-size: 11vw;
     color: #020d0a3b;
+    display: block;
 
 }
 .left h1::selection
@@ -119,6 +120,7 @@ nav
 {
     font-size: 11vw;
     color: #eedbbb59;
+    
 }
 .right h1::selection
 {
