@@ -1,154 +1,131 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200..1000&display=swap');
-*
-{
-  margin:0;
-  padding:0;
+
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-::-webkit-scrollbar
-{
-    width: 0%;
+::-webkit-scrollbar {
+  width: 0%;
 }
-html,body
-{
-  height:100%;
-  width:100%;
+html, body {
+  height: 100%;
+  width: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #111;
 }
-nav
-{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    margin-top: 1vw;
-    margin-left: 5vw;
-    color: white;
-    font-family: "Cairo Play", sans-serif;
-    height: 5vh;
-    width: 90%;     
-    position: fixed;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1vw;
+  margin-left: 5vw;
+  color: white;
+  font-family: "Cairo Play", sans-serif;
+  height: 5vh;
+  width: 90%;
+  position: fixed;
 }
-.logo
-{
-    color: #020d0a;
-    font-size: 1.2vw;
+.logo {
+  color: #020d0a;
+  font-size: 1.2vw;
 }
-.logo h1::selection
-{
-    color: #eedbbb;
-    background-color: #020d0a;
+.logo h1::selection {
+  color: #eedbbb;
+  background-color: #020d0a;
 }
-.navlinks a
-{
-    color: #eedbbb;
-    text-decoration: none;
-    padding: 1vw;
-    font-size: 1.5vw;
-    font-weight: 300;
+.navlinks a {
+  color: #eedbbb;
+  text-decoration: none;
+  padding: 1vw;
+  font-size: 1.5vw;
+  font-weight: 300;
 }
-
-.Page
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
+.Page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
 }
-.left
-{
-    width: 50%;
-    height:100vh;
-    background-color:#eedbbb;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    
+.left {
+  width: 50%;
+  height: 100vh;
+  background-color: #eedbbb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.left h1
-{
-    font-size: 11vw;
-    color: #020d0a3b;
-    display: block;
-
+.left h1 {
+  font-size: 11vw;
+  color: #020d0a3b;
+  display: block;
 }
-.left h1::selection
-{
-    color: #eedbbb;
-    background-color: #020d0a;
+.left h1::selection {
+  color: #eedbbb;
+  background-color: #020d0a;
 }
-.w
-{
-    rotate: -30deg;
+.w {
+  rotate: -30deg;
 }
-.e
-{
-    rotate: 30deg;
-    margin-left: 10vw;
-    margin-top: 20vw;
+.e {
+  rotate: 30deg;
+  margin-left: 10vw;
+  margin-top: 20vw;
 }
-.b
-{
-    rotate: -30deg;
-    margin-left: -10vw;
-    margin-top: 20vw;
+.b {
+  rotate: -30deg;
+  margin-left: -10vw;
+  margin-top: 20vw;
 }
-.image
-{
-    background-color: transparent;
-    z-index: 99;
-    position: absolute;
-    height: 50vh;
-    width: auto;
+.image {
+  background-color: transparent;
+  z-index: 99;
+  position: absolute;
+  height: 50vh;
+  width: auto;
 }
-.image::selection
-{
-    background-color: transparent;
+.image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
-.right
-{
-    width: 50%;
-    height:100vh; 
-    background-color: #020e0a;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.right {
+  width: 50%;
+  height: 100vh;
+  background-color: #020e0a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.right h1
-{
-    font-size: 11vw;
-    color: #eedbbb59;
-    
+.right h1 {
+  font-size: 11vw;
+  color: #eedbbb59;
 }
-.right h1::selection
-{
-    color: #020d0a;
-    background-color: #eedbbb;
+.right h1::selection {
+  color: #020d0a;
+  background-color: #eedbbb;
 }
-.a
-{
-    rotate: -30deg;
+.a {
+  rotate: -30deg;
 }
-.p
-{
-    rotate: 30deg;
-    margin-left: 10vw;
-    margin-top: 20vw;
+.p {
+  rotate: 30deg;
+  margin-left: 10vw;
+  margin-top: 20vw;
 }
-.p2
-{
-    rotate: 30deg;
-    margin-left: 4%;
-    margin-top: 20vw;
+.p2 {
+  rotate: 30deg;
+  margin-left: 4%;
+  margin-top: 20vw;
 }
 
+/* Buttons */
 .button-57 {
   position: relative;
   overflow: hidden;
   margin-right: 10vw;
-  border:none;
+  border: none;
   color: #020d0a;
   font-size: 0.8vw;
   border-radius: 2vw;
@@ -160,13 +137,11 @@ nav
   background: #eedbbb;
   touch-action: manipulation;
 }
-
 .button-57 span:first-child {
   position: relative;
   transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
   z-index: 10;
 }
-
 .button-57 span:last-child {
   color: #eedbbb;
   display: block;
@@ -181,7 +156,6 @@ nav
   height: 14px;
   line-height: 13px;
 }
-
 .button-57:after {
   content: "";
   position: absolute;
@@ -195,78 +169,126 @@ nav
   transform: skewY(9.3deg) scaleY(0);
   z-index: 50;
 }
-
 .button-57:hover:after {
   transform-origin: bottom center;
-
   transform: skewY(9.3deg) scaleY(2);
 }
-
 .button-57:hover span:last-child {
   transform: translateX(-50%) translateY(-100%);
   opacity: 1;
   transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
 }
-
-
 .button5 {
-    position: relative;
-    overflow: hidden;
-    border: solid 0.5px #020d0a;
-    color: #eedbbb ;
-    font-size: 0.8vw;
-    border-radius: 2vw;
-    width: 6vw;
-    height: 3vw;
-    padding: 1vw;
-    text-decoration: none;
-    cursor: pointer;    
-    background: #020d0a;
-    touch-action: manipulation;
+  position: relative;
+  overflow: hidden;
+  border: solid 0.5px #020d0a;
+  color: #eedbbb;
+  font-size: 0.8vw;
+  border-radius: 2vw;
+  width: 6vw;
+  height: 3vw;
+  padding: 1vw;
+  text-decoration: none;
+  cursor: pointer;
+  background: #020d0a;
+  touch-action: manipulation;
+}
+.button5 span:first-child {
+  position: relative;
+  transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 10;
+}
+.button5 span:last-child {
+  color: #020d0a;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 100;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translateY(225%) translateX(-50%);
+  height: 14px;
+  line-height: 13px;
+}
+.button5:after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #eedbbb;
+  transform-origin: bottom center;
+  transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  transform: skewY(9.3deg) scaleY(0);
+  z-index: 50;
+}
+.button5:hover:after {
+  transform-origin: bottom center;
+  transform: skewY(9.3deg) scaleY(2);
+}
+.button5:hover span:last-child {
+  transform: translateX(-50%) translateY(-100%);
+  opacity: 1;
+  transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  nav {
+    margin-left: 2vw;
+    margin-top: 2vw;
+    font-size: 3vw;
   }
-  
-  .button5 span:first-child {
-    position: relative;
-    transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
-    z-index: 10;
+  .logo h1 {
+    font-size: 4vw;
   }
-  
-  .button5 span:last-child {
-    color: #020d0a;
-    display: block;
-    position: absolute;
-    bottom: 0;
-    transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
-    z-index: 100;
-    opacity: 0;
-    top: 50%;
-    left: 50%;
-    transform: translateY(225%) translateX(-50%);
-    height: 14px;
-    line-height: 13px;
+  .navlinks a {
+    font-size: 3vw;
+    padding: 2vw;
   }
-  
-  .button5:after {
-    content: "";
-    position: absolute;
-    bottom: -50%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color:#eedbbb ;
-    transform-origin: bottom center;
-    transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
-    transform: skewY(9.3deg) scaleY(0);
-    z-index: 50;
+  .left h1, .right h1 {
+    font-size: 8vw;
   }
-  
-  .button5:hover:after {
-    transform-origin: bottom center;
-    transform: skewY(9.3deg) scaleY(2);
+  .button-57, .button5 {
+    width: 20vw;
+    height: 6vw;
+    font-size: 3vw;
   }
-  
-  .button5:hover span:last-child {
-    transform: translateX(-50%) translateY(-100%);
-    opacity: 1;
-    transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+  .image {
+    height: 30vh;
   }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  nav {
+    margin-left: 3vw;
+    font-size: 2vw;
+  }
+  .logo h1 {
+    font-size: 2.5vw;
+  }
+  .navlinks a {
+    font-size: 2vw;
+    padding: 1.5vw;
+  }
+  .left h1, .right h1 {
+    font-size: 10vw;
+  }
+  .button-57, .button5 {
+    width: 12vw;
+    height: 5vw;
+    font-size: 1.5vw;
+  }
+  .image {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 1201px) {
+  .image {
+    height: 50vh;
+  }
+}
